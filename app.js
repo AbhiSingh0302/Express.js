@@ -4,8 +4,10 @@ const express = require('express');
 
 const app = express();
 
-const server = http.createServer((req,res)=>{
-    res.write("<h1>Hello</h1>");
-});
+app.use((res,req,next)=>{
+    console.log("Inside middleware 1!!");
+})
+
+const server = http.createServer(app);
 
 server.listen(3000);
