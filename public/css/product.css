@@ -23,6 +23,7 @@ button{
     background-color: white;
     border-radius: 3px;
     cursor: pointer;
+    padding: 3px;
 }
 button:hover,
 button:active{
